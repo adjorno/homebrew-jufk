@@ -27,6 +27,17 @@ class Jufk < Formula
   end
 
   def install
-    bin.install "jufk"
+    if OS.mac?
+      if Hardware::CPU.arm?
+        # FIX: Look for the original filename and install/rename it to "jufk"
+        bin.install "jufk-macos-arm64" => "jufk"
+      else
+        bin.install "jufk-macos-x64" => "jufk"
+      end
+    elsif OS.linux?
+      if Hardware::CPU.intel?
+        bin.install "jufk-linux-x64" => "jufk"
+      end
+    end
   end
 end
