@@ -5,24 +5,24 @@
 class Jufk < Formula
   desc "A CLI tool for JUFK"
   homepage "https://github.com/adjorno/jufk"
-  version "0.3.7"
+  version "0.3.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/adjorno/jufk/releases/download/v0.3.7/jufk-macos-arm64"
-      sha256 "01af7cd658dcb3974d5b0c070cd7a6a14b8fc6fe64bd7f9885fdb24c3778a56c"
+      url "https://github.com/adjorno/jufk/releases/download/v0.3.8/jufk-macos-arm64"
+      sha256 "22486320105073be7dca9c474ace8eb3af92d58f5b94a4009e696d8a455d4391"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/adjorno/jufk/releases/download/v0.3.7/jufk-macos-x64"
-      sha256 "1944f003fdac8f9f7deeeb5813b7a011a1d971166895a15932ecbaa452f851e5"
+      url "https://github.com/adjorno/jufk/releases/download/v0.3.8/jufk-macos-x64"
+      sha256 "19e30aa023fdab3a5b47f3163988a7df7aaae9c5f707de04a29a69f790fb16f1"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/adjorno/jufk/releases/download/v0.3.7/jufk-linux-x64"
-      sha256 "6b22f46bf52a3ce8063b22f9df0d9c17a1983007dae8a588f306995d5522d663"
+      url "https://github.com/adjorno/jufk/releases/download/v0.3.8/jufk-linux-x64"
+      sha256 "62ed860bae9a38b0f2bb0c8404c23bcdd94690df7c0788670562ab5c5252f0e9"
     end
   end
 
