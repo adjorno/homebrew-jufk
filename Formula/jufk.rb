@@ -5,24 +5,24 @@
 class Jufk < Formula
   desc "Just Use Fucking Kotlin - One language. One codebase. Every platform."
   homepage "https://justusefuckingkotlin.com"
-  version ".1.4.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/adjorno/just-use-fucking-kotlin/releases/download/v.1.4.0/jufk-macos-arm64"
-      sha256 "75bf01381e4c00a8246a19b46a1531d270bcabfbbd4d62887ebbbfe7285b87b7"
+      url "https://github.com/adjorno/just-use-fucking-kotlin/releases/download/v1.4.0/jufk-macos-arm64"
+      sha256 "4cdee42f97c8b088e4a564b991d08651ad7e4fd26cdf694da5863214cafdfff7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/adjorno/just-use-fucking-kotlin/releases/download/v.1.4.0/jufk-macos-x64"
-      sha256 "c94564d247fef8445782ddbc30c70f08b7da97c3f20b3851c384bad8e9c1ea7f"
+      url "https://github.com/adjorno/just-use-fucking-kotlin/releases/download/v1.4.0/jufk-macos-x64"
+      sha256 "08f054ea0e85bd6804093941249c1e06d8d1909a4c8ede12c6b35d07fde58a3f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/adjorno/just-use-fucking-kotlin/releases/download/v.1.4.0/jufk-linux-x64"
-      sha256 "d475e426a2453f88747ed404565387d0f06c83c583ae7f1d9f5869087bf7d4bb"
+      url "https://github.com/adjorno/just-use-fucking-kotlin/releases/download/v1.4.0/jufk-linux-x64"
+      sha256 "71693e977444d8c0e8045d001fe02ec259ea1879cdf4ec94a50ca415de679d68"
     end
   end
 
